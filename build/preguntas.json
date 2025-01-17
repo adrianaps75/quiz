@@ -1,0 +1,17 @@
+[
+    {
+      "pregunta": "¿Cuál es la capital de Francia?",
+      "opciones": ["Madrid", "París", "Berlín", "Roma"],
+      "respuestaCorrecta": "París"
+    },
+    {
+      "pregunta": "¿Cuál es el río más largo del mundo?",
+      "opciones": ["Amazonas", "Nilo", "Misisipi", "Yangtsé"],
+      "respuestaCorrecta": "Amazonas"
+    },
+      {
+      "pregunta": "¿En qué año comenzó la Segunda Guerra Mundial?",
+      "opciones": ["1939", "1914", "1945", "1929"],
+      "respuestaCorrecta": "1939"
+    }
+  ]
