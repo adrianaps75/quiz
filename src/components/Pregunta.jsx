@@ -2,7 +2,7 @@ import React from 'react'
 
 const Pregunta = ({ pregunta }) => {
   return (
-    <p>{pregunta}</p>
+    <p className="fw-bolder m-4">{pregunta}</p>
   )
 }
 

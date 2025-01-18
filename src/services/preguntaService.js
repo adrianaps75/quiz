@@ -1,6 +1,6 @@
 export const cargarPreguntas = async () => {
   try {
-    const response = await fetch("./preguntas.json");
+    const response = await fetch(`./preguntas.json`);
     if (!response.ok) {
       throw new Error(`HTTP Error! Status: ${response.status}`);
     }

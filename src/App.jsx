@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { cargarPreguntas } from "./services/preguntaService.js";
 import {
   mostrarPreguntaAleatoria,
   mostrarRespuestasAleatorias,
-  verificarRespuesta, calcularPorcentaje
+  verificarRespuesta,
+  calcularPorcentaje,
 } from "./helpers/funciones.js";
 import Pregunta from "./components/Pregunta.jsx";
 import Opciones from "./components/Opciones.jsx";
@@ -19,12 +21,14 @@ function App() {
   const [respuestasCorrectas, setRespuestasCorrectas] = useState(0);
   const [totalRespuestas, setTotalRespuestas] = useState(0);
   const [porcentaje, setPorcentaje] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const obtenerPreguntas = async () => {
       try {
         const preguntas = await cargarPreguntas();
         setPreguntas(preguntas);
+        setTotalRespuestas(preguntas.length);
         cambiarPregunta(preguntas);
       } catch (error) {
         console.error("Error en el componente al cargar las preguntas", error);
@@ -58,8 +62,7 @@ function App() {
     if (preguntaAleatoria) {
       const resultado = verificarRespuesta(respuesta, preguntaAleatoria);
       setEsCorrecta(resultado);
-      setTotalRespuestas(totalRespuestas + 1);
-      if(resultado) {
+      if (resultado) {
         setRespuestasCorrectas(respuestasCorrectas + 1);
       }
     }
@@ -71,16 +74,25 @@ function App() {
 
   const porcentajeFinal = () => {
     return calcularPorcentaje(totalRespuestas, respuestasCorrectas);
-  }
+  };
+
+  const empezarDeNuevo = () => {
+    setFinalizado(false);
+    setRespuestasCorrectas(0);
+    setTotalRespuestas(0);
+    setPorcentaje(0);
+    cambiarPregunta(preguntas);
+    navigate("/");
+  };
 
   return (
     <div className="App">
       <h1>Quiz</h1>
       {finalizado ? (
-        <p>
-          ¡Has completado todas las preguntas! <br/>
+        <><p>
+          ¡Has completado todas las preguntas! <br />
           Porcentaje de respuestas correctas: {porcentajeFinal()}%
-        </p>
+        </p><button onClick={empezarDeNuevo}>Empezar de nuevo</button></>
       ) : preguntaAleatoria ? (
         <>
           <Pregunta pregunta={preguntaAleatoria.pregunta} />
@@ -89,18 +101,20 @@ function App() {
             onSeleccionar={handleSeleccionarRespuesta}
             respuestaSeleccionada={respuestaUsuario}
           />
-          {respuestaUsuario !== null && (
-            <div>
-              {esCorrecta ? (
-                <p style={{ color: "green" }}>¡Correcto!</p>
-              ) : (
-                <p style={{ color: "red" }}>
-                  Incorrecto. La respuesta correcta es:{" "}
-                  {preguntaAleatoria.respuestaCorrecta}
-                </p>
-              )}
-            </div>
-          )}
+          <div className="resultado text-center d-flex flex-column mb-3">
+            {respuestaUsuario !== null && (
+              <div>
+                {esCorrecta ? (
+                  <p style={{ color: "green" }}>¡Correcto!</p>
+                ) : (
+                  <p style={{ color: "red" }}>
+                    Incorrecto. La respuesta correcta es:{" "}
+                    {preguntaAleatoria.respuestaCorrecta}
+                  </p>
+                )}
+              </div>
+            )}
+          </div>
           <button
             onClick={handleSiguientePregunta}
             style={{ marginTop: "10px" }}
