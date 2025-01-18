@@ -1,17 +1,182 @@
 [
-    {
-      "pregunta": "¿Cuál es la capital de Francia?",
-      "opciones": ["Madrid", "París", "Berlín", "Roma"],
-      "respuestaCorrecta": "París"
-    },
-    {
-      "pregunta": "¿Cuál es el río más largo del mundo?",
-      "opciones": ["Amazonas", "Nilo", "Misisipi", "Yangtsé"],
-      "respuestaCorrecta": "Amazonas"
-    },
-      {
-      "pregunta": "¿En qué año comenzó la Segunda Guerra Mundial?",
-      "opciones": ["1939", "1914", "1945", "1929"],
-      "respuestaCorrecta": "1939"
-    }
-  ]
+  {
+    "pregunta": "¿Cuál es el objetivo principal de la Ley 1712 de 2014?",
+    "opciones": [
+      "Regular el derecho de petición",
+      "Garantizar el acceso a la información pública",
+      "Establecer normas sobre contratación pública",
+      "Regular el funcionamiento del Congreso"
+    ],
+    "respuestaCorrecta": "Garantizar el acceso a la información pública"
+  },
+  {
+    "pregunta": "¿Cómo se conoce también a la Ley 1712 de 2014?",
+    "opciones": [
+      "Ley de Habeas Data",
+      "Ley de Transparencia y del Derecho a la Información Pública Nacional",
+      "Ley Anticorrupción",
+      "Ley de Archivo General de la Nación"
+    ],
+    "respuestaCorrecta": "Ley de Transparencia y del Derecho a la Información Pública Nacional"
+  },
+  {
+    "pregunta": "¿A quiénes aplica la Ley 1712 de 2014?",
+    "opciones": [
+      "Solo a las entidades públicas del orden nacional",
+      "A todas las entidades del Estado y a particulares que cumplan funciones públicas",
+      "Solo a las entidades del poder ejecutivo",
+      "Solo a las empresas privadas"
+    ],
+    "respuestaCorrecta": "A todas las entidades del Estado y a particulares que cumplan funciones públicas"
+  },
+  {
+    "pregunta": "¿Qué tipo de información se considera pública según la Ley 1712 de 2014?",
+    "opciones": [
+      "Solo la información presupuestal",
+      "Toda la información que generen, obtengan, adquieran, transformen o controlen los sujetos obligados",
+      "Solo la información que no esté clasificada como reservada",
+      "Solo la información relacionada con derechos humanos"
+    ],
+    "respuestaCorrecta": "Toda la información que generen, obtengan, adquieran, transformen o controlen los sujetos obligados"
+  },
+  {
+    "pregunta": "¿Qué excepciones existen al acceso a la información pública?",
+    "opciones": [
+      "No existen excepciones",
+      "Información clasificada como reservada por seguridad nacional, defensa nacional o relaciones internacionales",
+      "Solo información de carácter personal",
+      "Información que afecte la propiedad intelectual"
+    ],
+    "respuestaCorrecta": "Información clasificada como reservada por seguridad nacional, defensa nacional o relaciones internacionales"
+  },
+  {
+    "pregunta": "¿Cuál es el plazo máximo para responder una solicitud de información pública?",
+    "opciones": [
+      "5 días hábiles",
+      "10 días hábiles",
+      "15 días hábiles prorrogables por otros 10",
+      "30 días calendario"
+    ],
+    "respuestaCorrecta": "10 días hábiles"
+  },
+  {
+    "pregunta": "¿Qué recurso se puede interponer ante la negativa de entregar información pública?",
+    "opciones": [
+      "Acción de Tutela",
+      "Recurso de Reposición y en subsidio de Apelación ante la Procuraduría",
+      "Demanda ante el Consejo de Estado",
+      "Queja ante la Defensoría del Pueblo"
+    ],
+    "respuestaCorrecta": "Recurso de Reposición y en subsidio de Apelación ante la Procuraduría"
+  },
+  {
+    "pregunta": "¿Qué se entiende por información pública clasificada?",
+    "opciones": [
+      "Información que es de conocimiento público",
+      "Información sujeta a reserva por daño a intereses públicos",
+      "Información que se publica en medios oficiales",
+      "Información que se entrega a los medios de comunicación"
+    ],
+    "respuestaCorrecta": "Información sujeta a reserva por daño a intereses públicos"
+  },
+  {
+    "pregunta": "¿Qué se entiende por información pública reservada?",
+    "opciones": [
+      "Información de acceso restringido temporalmente por razones constitucionales o legales",
+      "Información que nunca puede ser pública",
+      "Información que solo conocen los funcionarios públicos",
+      "Información que se publica después de 50 años"
+    ],
+    "respuestaCorrecta": "Información de acceso restringido temporalmente por razones constitucionales o legales"
+  },
+  {
+    "pregunta": "¿Qué papel juega la Procuraduría General de la Nación en la Ley 1712 de 2014?",
+    "opciones": [
+      "Es la encargada de reglamentar la ley",
+      "Resuelve los recursos de apelación en materia de acceso a la información",
+      "Es la encargada de capacitar a los funcionarios públicos",
+      "No tiene ninguna función específica"
+    ],
+    "respuestaCorrecta": "Resuelve los recursos de apelación en materia de acceso a la información"
+  },
+  {
+    "pregunta": "¿Qué es el índice de información clasificada y reservada?",
+    "opciones": [
+      "Un listado de todas las solicitudes de información",
+      "Un listado de la información clasificada y reservada por cada entidad",
+      "Un registro de los funcionarios públicos",
+      "Un archivo con documentos históricos"
+    ],
+    "respuestaCorrecta": "Un listado de la información clasificada y reservada por cada entidad"
+  },
+  {
+    "pregunta": "¿Cuál es el objetivo del principio de máxima publicidad?",
+    "opciones": [
+      "Restringir al máximo el acceso a la información",
+      "Promover la divulgación proactiva de la información pública",
+      "Publicar únicamente la información que soliciten los ciudadanos",
+      "Publicar la información solo en casos excepcionales"
+    ],
+    "respuestaCorrecta": "Promover la divulgación proactiva de la información pública"
+  },
+  {
+    "pregunta": "¿Qué implica el principio de transparencia?",
+    "opciones": [
+      "Ocultar la información pública",
+      "Facilitar el acceso a la información pública de forma clara y oportuna",
+      "Entregar la información solo a personas autorizadas",
+      "Entregar la información de forma confusa para evitar su comprensión"
+    ],
+    "respuestaCorrecta": "Facilitar el acceso a la información pública de forma clara y oportuna"
+  },
+  {
+    "pregunta": "¿Qué se entiende por divulgación proactiva de la información?",
+    "opciones": [
+      "Esperar a que los ciudadanos soliciten la información",
+      "Publicar la información sin necesidad de que sea solicitada",
+      "Entregar la información solo a los medios de comunicación",
+      "No publicar ningún tipo de información"
+    ],
+    "respuestaCorrecta": "Publicar la información sin necesidad de que sea solicitada"
+  },
+  {
+    "pregunta": "¿Qué rol tienen los sujetos obligados frente a la Ley 1712 de 2014?",
+    "opciones": [
+      "No tienen ninguna obligación",
+      "Deben garantizar el derecho de acceso a la información pública",
+      "Pueden decidir qué información publicar y cuál no",
+      "Solo deben responder las solicitudes de información que les lleguen"
+    ],
+    "respuestaCorrecta": "Deben garantizar el derecho de acceso a la información pública"
+  },
+  {
+    "pregunta": "¿Qué es el derecho de acceso a la información pública?",
+    "opciones": [
+      "Un privilegio de los funcionarios públicos",
+      "La facultad que tienen las personas de conocer la información pública",
+      "Una obligación de los medios de comunicación",
+      "Un derecho exclusivo de los congresistas"
+    ],
+    "respuestaCorrecta": "La facultad que tienen las personas de conocer la información pública"
+  },
+  {
+    "pregunta": "¿La Ley 1712 de 2014 promueve la rendición de cuentas?",
+    "opciones": [
+      "No tiene relación con la rendición de cuentas",
+      "Sí, al facilitar el acceso a la información que permite el control social",
+      "Solo promueve la rendición de cuentas de los alcaldes",
+      "Solo promueve la rendición de cuentas del Presidente de la República"
+    ],
+    "respuestaCorrecta": "Sí, al facilitar el acceso a la información que permite el control social"
+  },
+  {
+    "pregunta": "¿Qué se busca con la transparencia en la gestión pública?",
+    "opciones": [
+      "Ocultar la gestión pública",
+      "Fortalecer la confianza ciudadana y prevenir la corrupción",
+      "Dificultar el acceso a la información",
+      "Limitar la participación ciudadana"
+    ],
+    "respuestaCorrecta": "Fortalecer la confianza ciudadana y prevenir la corrupción"
+  }
+]
